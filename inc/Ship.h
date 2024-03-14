@@ -4,6 +4,7 @@
 
 #ifndef CPPPROJECT_SHIP_H
 #define CPPPROJECT_SHIP_H
+#include <iostream>
 class Ship {
 public:
     Ship() = default;

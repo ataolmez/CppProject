@@ -15,4 +15,9 @@ add_executable(CppProject main.cpp
         inc/normalship.h
         src/strongship.cpp
         src/normalship.cpp
+        src/AbondonedPlanet.cpp
+        src/AbondonedPlanet.cpp
+        inc/AbondonedPlanet.h
+        inc/Pirate.h
+        src/Pirate.cpp
 )

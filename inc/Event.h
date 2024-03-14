@@ -7,6 +7,7 @@
 
 #include<memory>
 #include "Ship.h"
+#include <iostream>
 
 class Event {
 protected:
