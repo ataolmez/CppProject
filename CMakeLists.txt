@@ -8,4 +8,8 @@ add_executable(CppProject main.cpp
         inc/Ship.h
         inc/Event.h
         inc/fastship.h
-        src/fastship.cpp)
+        src/fastship.cpp
+        inc/Asteroids.h
+        src/Asteroids.cpp
+        src/Event.cpp
+        src/Event.cpp)
