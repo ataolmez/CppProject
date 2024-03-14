@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 
 add_executable(CppProject main.cpp
-        inc/Ship.h)
+        inc/Ship.h
+        src/Ship.cpp)
