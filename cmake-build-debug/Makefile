@@ -152,6 +152,7 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+<<<<<<< Updated upstream
 src/Event.obj: src/Event.cpp.obj
 .PHONY : src/Event.obj
 
@@ -200,6 +201,8 @@ src/Ship.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Ship.cpp.s
 .PHONY : src/Ship.cpp.s
 
+=======
+>>>>>>> Stashed changes
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,12 +215,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+<<<<<<< Updated upstream
 	@echo ... src/Event.obj
 	@echo ... src/Event.i
 	@echo ... src/Event.s
 	@echo ... src/Ship.obj
 	@echo ... src/Ship.i
 	@echo ... src/Ship.s
+=======
+>>>>>>> Stashed changes
 .PHONY : help
 
 

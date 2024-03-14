@@ -82,21 +82,27 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+<<<<<<< Updated upstream
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Event.h">
 			<Option target="CppProject"/>
 		</Unit>
+=======
+>>>>>>> Stashed changes
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Ship.h">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/main.cpp">
 			<Option target="CppProject"/>
 		</Unit>
+<<<<<<< Updated upstream
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Event.cpp">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Ship.cpp">
 			<Option target="CppProject"/>
 		</Unit>
+=======
+>>>>>>> Stashed changes
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
