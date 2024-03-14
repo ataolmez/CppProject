@@ -11,7 +11,7 @@
 class Event {
 protected:
     const int damage;
-    const int escapeChance{50};
+    const int escapeChance;
 public:
     Event(const int damage_, const int escapeChance_):damage{damage_},escapeChance{escapeChance_} {std::cout<<"called event"<<"\n";}
     virtual ~Event(){std::cout<<"called destructor of event"<<"\n";};
