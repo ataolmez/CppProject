@@ -7,9 +7,6 @@
 // Created by ARDA on 14.03.2024.
 //
 
-Asteroids::Asteroids() {
-    std::cout << "Asteroids constructor called" << "\n";
-}
 
 int Asteroids::generateRandomNumber() {
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
