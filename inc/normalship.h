@@ -1,0 +1,8 @@
+//
+// Created by ATA on 14.03.2024.
+//
+
+#ifndef CPPPROJECT_NORMALSHIP_H
+#define CPPPROJECT_NORMALSHIP_H
+
+#endif //CPPPROJECT_NORMALSHIP_H

@@ -11,4 +11,8 @@ add_executable(CppProject main.cpp
         inc/Asteroids.h
         src/fastship.cpp
         src/Asteroids.cpp
+        inc/strongship.h
+        inc/normalship.h
+        src/strongship.cpp
+        src/normalship.cpp
 )

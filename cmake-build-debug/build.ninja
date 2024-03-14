@@ -67,6 +67,18 @@ build CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj: CXX_COMPILER__CppProject_
   OBJECT_DIR = CMakeFiles\CppProject.dir
   OBJECT_FILE_DIR = CMakeFiles\CppProject.dir\src
 
+build CMakeFiles/CppProject.dir/src/strongship.cpp.obj: CXX_COMPILER__CppProject_unscanned_Debug C$:/Users/ATA/Documents/GitHub/CppProject/src/strongship.cpp || cmake_object_order_depends_target_CppProject
+  DEP_FILE = CMakeFiles\CppProject.dir\src\strongship.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProject.dir\src
+
+build CMakeFiles/CppProject.dir/src/normalship.cpp.obj: CXX_COMPILER__CppProject_unscanned_Debug C$:/Users/ATA/Documents/GitHub/CppProject/src/normalship.cpp || cmake_object_order_depends_target_CppProject
+  DEP_FILE = CMakeFiles\CppProject.dir\src\normalship.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProject.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CppProject
@@ -75,7 +87,7 @@ build CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj: CXX_COMPILER__CppProject_
 #############################################
 # Link the executable CppProject.exe
 
-build CppProject.exe: CXX_EXECUTABLE_LINKER__CppProject_Debug CMakeFiles/CppProject.dir/main.cpp.obj CMakeFiles/CppProject.dir/src/fastship.cpp.obj CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj
+build CppProject.exe: CXX_EXECUTABLE_LINKER__CppProject_Debug CMakeFiles/CppProject.dir/main.cpp.obj CMakeFiles/CppProject.dir/src/fastship.cpp.obj CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj CMakeFiles/CppProject.dir/src/strongship.cpp.obj CMakeFiles/CppProject.dir/src/normalship.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CppProject.dir
