@@ -9,8 +9,9 @@
 
 
 int main(){
-    normalship obj(100,100,100,1,1);
-    std::cout<< obj.GetDamage()<<"\n";
+    normalship obj = normalship (100,100,100,1,1);
+    obj.changeMoney(30);
+    std::cout<< obj.GetMoney()<<"\n";
 
     return 0;
 }
