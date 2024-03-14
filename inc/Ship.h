@@ -5,4 +5,7 @@
 #ifndef CPPPROJECT_SHIP_H
 #define CPPPROJECT_SHIP_H
 
+
+
+
 #endif //CPPPROJECT_SHIP_H
