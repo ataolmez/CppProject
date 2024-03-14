@@ -11,19 +11,15 @@
 class Event {
 protected:
     const int damage;
-    const int escapeChance{50};
+    const int escapeChance;
 public:
-    Event();
-    virtual ~Event();
+    Event(const int damage_, const int escapeChance_):damage{damage_},escapeChance{escapeChance_} {std::cout<<"called event"<<"\n";}
+    virtual ~Event(){std::cout<<"called destructor of event"<<"\n";};
     virtual void eventEncounter(std::unique_ptr<Ship> ship) = 0;
     virtual int generateRandomNumber() = 0;
 
 
 };
-
-
-
-
 
 
 
