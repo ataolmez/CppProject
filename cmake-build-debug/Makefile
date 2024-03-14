@@ -152,57 +152,102 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-<<<<<<< Updated upstream
-src/Event.obj: src/Event.cpp.obj
-.PHONY : src/Event.obj
+src/Asteroids.obj: src/Asteroids.cpp.obj
+.PHONY : src/Asteroids.obj
 
 # target to build an object file
-src/Event.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Event.cpp.obj
-.PHONY : src/Event.cpp.obj
+src/Asteroids.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj
+.PHONY : src/Asteroids.cpp.obj
 
-src/Event.i: src/Event.cpp.i
-.PHONY : src/Event.i
+src/Asteroids.i: src/Asteroids.cpp.i
+.PHONY : src/Asteroids.i
 
 # target to preprocess a source file
-src/Event.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Event.cpp.i
-.PHONY : src/Event.cpp.i
+src/Asteroids.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Asteroids.cpp.i
+.PHONY : src/Asteroids.cpp.i
 
-src/Event.s: src/Event.cpp.s
-.PHONY : src/Event.s
+src/Asteroids.s: src/Asteroids.cpp.s
+.PHONY : src/Asteroids.s
 
 # target to generate assembly for a file
-src/Event.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Event.cpp.s
-.PHONY : src/Event.cpp.s
+src/Asteroids.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Asteroids.cpp.s
+.PHONY : src/Asteroids.cpp.s
 
-src/Ship.obj: src/Ship.cpp.obj
-.PHONY : src/Ship.obj
+src/fastship.obj: src/fastship.cpp.obj
+.PHONY : src/fastship.obj
 
 # target to build an object file
-src/Ship.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Ship.cpp.obj
-.PHONY : src/Ship.cpp.obj
+src/fastship.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/fastship.cpp.obj
+.PHONY : src/fastship.cpp.obj
 
-src/Ship.i: src/Ship.cpp.i
-.PHONY : src/Ship.i
+src/fastship.i: src/fastship.cpp.i
+.PHONY : src/fastship.i
 
 # target to preprocess a source file
-src/Ship.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Ship.cpp.i
-.PHONY : src/Ship.cpp.i
+src/fastship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/fastship.cpp.i
+.PHONY : src/fastship.cpp.i
 
-src/Ship.s: src/Ship.cpp.s
-.PHONY : src/Ship.s
+src/fastship.s: src/fastship.cpp.s
+.PHONY : src/fastship.s
 
 # target to generate assembly for a file
-src/Ship.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Ship.cpp.s
-.PHONY : src/Ship.cpp.s
+src/fastship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/fastship.cpp.s
+.PHONY : src/fastship.cpp.s
 
-=======
->>>>>>> Stashed changes
+src/normalship.obj: src/normalship.cpp.obj
+.PHONY : src/normalship.obj
+
+# target to build an object file
+src/normalship.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/normalship.cpp.obj
+.PHONY : src/normalship.cpp.obj
+
+src/normalship.i: src/normalship.cpp.i
+.PHONY : src/normalship.i
+
+# target to preprocess a source file
+src/normalship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/normalship.cpp.i
+.PHONY : src/normalship.cpp.i
+
+src/normalship.s: src/normalship.cpp.s
+.PHONY : src/normalship.s
+
+# target to generate assembly for a file
+src/normalship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/normalship.cpp.s
+.PHONY : src/normalship.cpp.s
+
+src/strongship.obj: src/strongship.cpp.obj
+.PHONY : src/strongship.obj
+
+# target to build an object file
+src/strongship.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/strongship.cpp.obj
+.PHONY : src/strongship.cpp.obj
+
+src/strongship.i: src/strongship.cpp.i
+.PHONY : src/strongship.i
+
+# target to preprocess a source file
+src/strongship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/strongship.cpp.i
+.PHONY : src/strongship.cpp.i
+
+src/strongship.s: src/strongship.cpp.s
+.PHONY : src/strongship.s
+
+# target to generate assembly for a file
+src/strongship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/strongship.cpp.s
+.PHONY : src/strongship.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -215,15 +260,18 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-<<<<<<< Updated upstream
-	@echo ... src/Event.obj
-	@echo ... src/Event.i
-	@echo ... src/Event.s
-	@echo ... src/Ship.obj
-	@echo ... src/Ship.i
-	@echo ... src/Ship.s
-=======
->>>>>>> Stashed changes
+	@echo ... src/Asteroids.obj
+	@echo ... src/Asteroids.i
+	@echo ... src/Asteroids.s
+	@echo ... src/fastship.obj
+	@echo ... src/fastship.i
+	@echo ... src/fastship.s
+	@echo ... src/normalship.obj
+	@echo ... src/normalship.i
+	@echo ... src/normalship.s
+	@echo ... src/strongship.obj
+	@echo ... src/strongship.i
+	@echo ... src/strongship.s
 .PHONY : help
 
 

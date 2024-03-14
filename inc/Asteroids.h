@@ -16,7 +16,7 @@ public:
 
     int generateRandomNumber() override;
 
-    int randomNumber;
+    int randomNumber{};
 };
 
 

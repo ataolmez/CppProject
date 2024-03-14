@@ -82,27 +82,39 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-<<<<<<< Updated upstream
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Asteroids.h">
+			<Option target="CppProject"/>
+		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Event.h">
 			<Option target="CppProject"/>
 		</Unit>
-=======
->>>>>>> Stashed changes
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Ship.h">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/fastship.h">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/normalship.h">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/strongship.h">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/main.cpp">
 			<Option target="CppProject"/>
 		</Unit>
-<<<<<<< Updated upstream
-		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Event.cpp">
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Asteroids.cpp">
 			<Option target="CppProject"/>
 		</Unit>
-		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Ship.cpp">
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/fastship.cpp">
 			<Option target="CppProject"/>
 		</Unit>
-=======
->>>>>>> Stashed changes
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/normalship.cpp">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/strongship.cpp">
+			<Option target="CppProject"/>
+		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
