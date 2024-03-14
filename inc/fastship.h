@@ -16,8 +16,8 @@ public:
     double GetHealth() override;
     int GetFuel() const override;
     void changeMoney(int pay) override;
-    int GetChance() const override;
-    int GetDamage() const override;
+    double GetChance() const override;
+    double GetDamage() const override;
 
 
 

@@ -19,9 +19,9 @@ public:
 
     virtual int GetFuel() const = 0;
 
-    virtual int GetChance() const = 0;
+    virtual double GetChance() const = 0;
 
-    virtual int GetDamage() const = 0;
+    virtual double GetDamage() const = 0;
 
     virtual void changeMoney(int pay) = 0;
 

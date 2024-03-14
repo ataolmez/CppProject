@@ -17,8 +17,8 @@ public:
     void changeMoney(int pay) override;
     double GetHealth() override;
     int GetFuel() const override;
-    int GetChance() const override;
-    int GetDamage() const override;
+    double GetChance() const override;
+    double GetDamage() const override;
     int GetMoney() override;
 
 private:
