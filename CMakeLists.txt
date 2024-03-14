@@ -20,4 +20,6 @@ add_executable(CppProject main.cpp
         inc/AbondonedPlanet.h
         inc/Pirate.h
         src/Pirate.cpp
+        inc/Game.h
+        src/Game.cpp
 )
