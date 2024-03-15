@@ -8,6 +8,7 @@
 #include "Event.h"
 #include "Ship.h"
 #include <memory>
+#include <iostream>
 
 class Asteroids : public Event {
 public:
