@@ -24,7 +24,7 @@ private:
     std::unique_ptr<Ship> normalshipInstance;
     std::unique_ptr<Ship> strongshipInstance;
     std::unique_ptr<Ship> fastshipInstance;
-    int count{};
+    int count{0};
     int shipSelection{0};
 
 };

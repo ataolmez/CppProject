@@ -8,6 +8,7 @@
 #include "Ship.h"
 #include <memory>
 #include <iostream>
+#include <vector>
 class Pirate : public Event {
 public:
     Pirate();
@@ -15,9 +16,13 @@ public:
     ~Pirate() override{std::cout<<"Pirate destructor called"<<"\n";};
 
     void eventEncounter(std::unique_ptr<Ship> ship) override;
-
     int generateRandomNumber() override;
     int randomNumber;
-    int escapeParameter;
+    int escapeParameter = 0;
+    int chooseaction();
+    static int choose;
+    std::vector<int> randomNumberVector;;
+
+
 };
 #endif //CPPPROJECT_PIRATE_H
