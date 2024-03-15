@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CppProject.dir/main.cpp.obj.d"
   "CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj"
   "CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj.d"
+  "CMakeFiles/CppProject.dir/src/Pirate.cpp.obj"
+  "CMakeFiles/CppProject.dir/src/Pirate.cpp.obj.d"
   "CMakeFiles/CppProject.dir/src/fastship.cpp.obj"
   "CMakeFiles/CppProject.dir/src/fastship.cpp.obj.d"
   "CMakeFiles/CppProject.dir/src/normalship.cpp.obj"

@@ -176,6 +176,30 @@ src/Asteroids.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Asteroids.cpp.s
 .PHONY : src/Asteroids.cpp.s
 
+src/Pirate.obj: src/Pirate.cpp.obj
+.PHONY : src/Pirate.obj
+
+# target to build an object file
+src/Pirate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Pirate.cpp.obj
+.PHONY : src/Pirate.cpp.obj
+
+src/Pirate.i: src/Pirate.cpp.i
+.PHONY : src/Pirate.i
+
+# target to preprocess a source file
+src/Pirate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Pirate.cpp.i
+.PHONY : src/Pirate.cpp.i
+
+src/Pirate.s: src/Pirate.cpp.s
+.PHONY : src/Pirate.s
+
+# target to generate assembly for a file
+src/Pirate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Pirate.cpp.s
+.PHONY : src/Pirate.cpp.s
+
 src/fastship.obj: src/fastship.cpp.obj
 .PHONY : src/fastship.obj
 
@@ -263,6 +287,9 @@ help:
 	@echo ... src/Asteroids.obj
 	@echo ... src/Asteroids.i
 	@echo ... src/Asteroids.s
+	@echo ... src/Pirate.obj
+	@echo ... src/Pirate.i
+	@echo ... src/Pirate.s
 	@echo ... src/fastship.obj
 	@echo ... src/fastship.i
 	@echo ... src/fastship.s

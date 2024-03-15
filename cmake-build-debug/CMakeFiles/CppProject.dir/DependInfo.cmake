@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/main.cpp" "CMakeFiles/CppProject.dir/main.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/main.cpp.obj.d"
   "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Asteroids.cpp" "CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj.d"
+  "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Pirate.cpp" "CMakeFiles/CppProject.dir/src/Pirate.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/src/Pirate.cpp.obj.d"
   "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/fastship.cpp" "CMakeFiles/CppProject.dir/src/fastship.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/src/fastship.cpp.obj.d"
   "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/normalship.cpp" "CMakeFiles/CppProject.dir/src/normalship.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/src/normalship.cpp.obj.d"
   "C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/strongship.cpp" "CMakeFiles/CppProject.dir/src/strongship.cpp.obj" "gcc" "CMakeFiles/CppProject.dir/src/strongship.cpp.obj.d"

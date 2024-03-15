@@ -15,6 +15,7 @@ add_executable(CppProject main.cpp
         inc/normalship.h
         src/strongship.cpp
         src/normalship.cpp
+        src/Pirate.cpp
 
 )
 
