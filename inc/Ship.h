@@ -10,9 +10,8 @@ public:
     Ship() = default;
 
     Ship(int _fuel, int _money, double _health, double _damagemodifier, double _chancemodifier) : fuel{_fuel},money{_money},health{_health},damagemodifier{_damagemodifier},chancemodifier{_chancemodifier} {}
-    virtual ~Ship(){
-        std::cout << "Base Destructor" << std::endl;
-    };
+    virtual ~Ship()= default;
+    Ship(const Ship&) = delete;
 
     virtual void DecreaseHealth(int damage) = 0;
 

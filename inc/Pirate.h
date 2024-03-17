@@ -15,7 +15,7 @@ public:
     Pirate(const int damage_, const int escapeChance_):Event(damage_,escapeChance_){}
     ~Pirate() override{std::cout<<"Pirate destructor called"<<"\n";};
 
-    void eventEncounter(std::unique_ptr<Ship> ship) override;
+    void eventEncounter(std::unique_ptr<Ship>& ship) override;
     int generateRandomNumber() override;
     int randomNumber;
     int escapeParameter = 0;

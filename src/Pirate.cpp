@@ -24,7 +24,7 @@ int Pirate::chooseaction(){
     return sec;
 }
 
-void Pirate::eventEncounter(std::unique_ptr<Ship> ship) {
+void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
     int secenek;
 
     for (int i = 0; i < 3; ++i) {

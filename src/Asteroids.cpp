@@ -18,7 +18,9 @@ int Asteroids::generateRandomNumber() {
 }
 
 
-void Asteroids::eventEncounter(std::unique_ptr<Ship> ship){
+void Asteroids::eventEncounter(std::unique_ptr<Ship>& ship){
+
+
     int i;
 
     for(i=1;i<4;i++) {

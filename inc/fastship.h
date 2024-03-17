@@ -9,7 +9,8 @@
 class fastship:public Ship{
 public:
     fastship(int _fuel,int _money,double _health,double _damagemodifier,double _chancemodifier) : Ship(_fuel,_money,_health,_damagemodifier,_chancemodifier) {}
-    ~fastship() override{std::cout<<"fastship destructor called"<<"\n";};
+    ~fastship() override{};
+    fastship(const fastship&) = delete;
 
     void DecreaseHealth(int damage) override;
     void DecreaseFuel() override;

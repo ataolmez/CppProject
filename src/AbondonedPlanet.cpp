@@ -17,7 +17,7 @@ int AbondonedPlanet::generateRandomNumber() {
     return rand() % 100 + 1;
 }
 
-void AbondonedPlanet::eventEncounter(std::unique_ptr<Ship> ship){
+void AbondonedPlanet::eventEncounter(std::unique_ptr<Ship> &ship){
     int randomNumber = generateRandomNumber();
     if (randomNumber < ship->GetChance() * Event::escapeChance) {
         std::cout << "You have found 10 gold!" << "\n";
@@ -26,7 +26,7 @@ void AbondonedPlanet::eventEncounter(std::unique_ptr<Ship> ship){
     else{
         std::cout <<"Ambush Pirate Attack!"<<"\n";
         std::unique_ptr<Pirate> attacker(new Pirate(10,50));
-        attacker->eventEncounter(std::move(ship));
+        attacker->eventEncounter(ship);
 
     }
 }

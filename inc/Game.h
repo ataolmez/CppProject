@@ -19,7 +19,7 @@ public:
     bool end( std::unique_ptr<Ship>& shipInstance) const;
 
     void chooseship();
-    void RandomEvent(std::unique_ptr<Ship> shipInstance);
+    void RandomEvent(std::unique_ptr<Ship> &shipInstance);
 private:
     std::unique_ptr<Ship> normalshipInstance;
     std::unique_ptr<Ship> strongshipInstance;

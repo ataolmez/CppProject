@@ -15,7 +15,7 @@ public:
     AbondonedPlanet(const int damage_, const int escapeChance_):Event(damage_,escapeChance_){}
     ~AbondonedPlanet() override{std::cout<<"AbondonedPlanet destructor called"<<"\n";};
 
-    void eventEncounter(std::unique_ptr<Ship> ship) override;
+    void eventEncounter(std::unique_ptr<Ship> &ship) override;
 
     int generateRandomNumber() override;
 
