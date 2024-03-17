@@ -77,3 +77,6 @@
 2355	3559	7324010111311874	CMakeFiles/CppProject.dir/src/AbondonedPlanet.cpp.obj	80d43d70e9163169
 1786	3570	7324010111432269	CMakeFiles/CppProject.dir/src/Pirate.cpp.obj	f64b1e62a7a877c5
 3570	3946	7324010115127214	CppProject.exe	4ca60f2c384a4ed6
+9	2504	7324012927627148	CMakeFiles/CppProject.dir/src/Asteroids.cpp.obj	2a055710becb2edf
+19	2570	7324012928283689	CMakeFiles/CppProject.dir/src/Pirate.cpp.obj	f64b1e62a7a877c5
+2570	2822	7324012930753431	CppProject.exe	4ca60f2c384a4ed6
