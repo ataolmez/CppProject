@@ -9,7 +9,9 @@
 class strongship :public Ship{
 public:
     strongship(int _fuel,int _money,double _health,double _damagemodifier, double _chancemodifier) : Ship(_fuel,_money,_health,_damagemodifier,_chancemodifier) {}
-    ~strongship() override{std::cout<<"strongship destructor called"<<"\n";};
+    ~strongship() override{};
+    strongship(const strongship&) = delete;
+
 
     void DecreaseHealth(int damage);
     void DecreaseFuel();

@@ -35,7 +35,7 @@ void Game::begin() {
     switch (shipSelection) {
         case 1:
             while (!end(normalshipInstance)) {
-                RandomEvent(std::move(normalshipInstance));
+                RandomEvent(normalshipInstance);
                 count++;
                 std::cout<<count<<"\n";
 
@@ -43,7 +43,7 @@ void Game::begin() {
             break;
         case 2:
             while (!end(strongshipInstance)) {
-                RandomEvent(std::move(strongshipInstance));
+                RandomEvent(strongshipInstance);
                 count++;
 
 
@@ -51,7 +51,7 @@ void Game::begin() {
             break;
         case 3:
             while (!end(fastshipInstance)) {
-                RandomEvent(std::move(fastshipInstance));
+                RandomEvent(fastshipInstance);
                 count++;
 
 
@@ -108,9 +108,9 @@ void Game::chooseship() {
 }
 
 
-void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
+void Game::RandomEvent(std::unique_ptr<Ship>&shipInstance) {
     if (!shipInstance) {
-        std::cout << "shipInstance is null\n";
+        std::cout << "Error: shipInstance is null\n";
         return;
     }
 
@@ -121,14 +121,11 @@ void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
 
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 
-    int randomIndex = std::rand() % eventVector.size();
-
-    Event* randomEvent = eventVector[randomIndex].get();
-    randomEvent->eventEncounter(std::move(shipInstance)); // Passing ownership to event
-
-    // Check if any ship has ended the game
-    bool gameEnded = end(normalshipInstance) || end(strongshipInstance) || end(fastshipInstance);
-
-    // Debug statement to check if end function has been called and the result of gameEnded
-    std::cout << "End() called. gameEnded: " << gameEnded << "\n";
+    for (auto& event : eventVector) {
+        int randomIndex = std::rand() % eventVector.size();
+        Event* randomEvent = eventVector[randomIndex].get();
+        std::cout << "Executing random event...\n";
+        randomEvent->eventEncounter(shipInstance);
+        std::cout << "Random event executed.\n";
+    }
 }
