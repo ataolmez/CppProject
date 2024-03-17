@@ -24,5 +24,3 @@ add_executable(CppProject main.cpp
 
 )
 
-
-
