@@ -13,7 +13,7 @@ class AbondonedPlanet: public Event {
 public:
     AbondonedPlanet();
     AbondonedPlanet(const int damage_, const int escapeChance_):Event(damage_,escapeChance_){}
-    ~AbondonedPlanet() override{std::cout<<"AbondonedPlanet destructor called"<<"\n";};
+    ~AbondonedPlanet() override{};
 
     void eventEncounter(std::unique_ptr<Ship> &ship) override;
 

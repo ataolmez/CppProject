@@ -21,9 +21,6 @@ void Game::begin() {
     Game::chooseship();
 
 
-    // Call chooseship to initialize shipInstance
-    Game::chooseship();
-
     // Debug statements to verify shipInstance
     if (normalshipInstance)
         std::cout << "Normal ship initialized\n";

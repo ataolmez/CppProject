@@ -14,7 +14,7 @@ class Asteroids : public Event {
 public:
     Asteroids();
     Asteroids(const int damage_, const int escapeChance_):Event(damage_,escapeChance_){}
-    ~Asteroids() override{std::cout<<"Asteroids destructor called"<<"\n";};
+    ~Asteroids() override{};
 
     void eventEncounter(std::unique_ptr<Ship>& ship) override;
 

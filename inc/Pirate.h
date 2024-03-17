@@ -13,7 +13,7 @@ class Pirate : public Event {
 public:
     Pirate();
     Pirate(const int damage_, const int escapeChance_):Event(damage_,escapeChance_){}
-    ~Pirate() override{std::cout<<"Pirate destructor called"<<"\n";};
+    ~Pirate() override{};
 
     void eventEncounter(std::unique_ptr<Ship>& ship) override;
     int generateRandomNumber() override;
