@@ -21,14 +21,6 @@ void Game::begin() {
     Game::chooseship();
 
 
-    // Debug statements to verify shipInstance
-    if (normalshipInstance)
-        std::cout << "Normal ship initialized\n";
-    if (strongshipInstance)
-        std::cout << "Strong ship initialized\n";
-    if (fastshipInstance)
-        std::cout << "Fast ship initialized\n";
-
     switch (shipSelection) {
         case 1:
             while (!end(normalshipInstance)) {
@@ -71,7 +63,7 @@ bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
         std::cout << ", shipInstance is null\n";
     }
 
-    if (count == 5 || (shipInstance && shipInstance->GetFuel() <= 0) || (shipInstance && shipInstance->GetHealth() <= 0)) {
+    if (count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0) {
         std::cout << "Ending conditions met. Result: ";
         if (shipInstance)
             std::cout << (shipInstance->GetFuel() * 5) + (shipInstance->GetHealth() * 10) + (shipInstance->GetMoney() * 10);
@@ -79,7 +71,7 @@ bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
             std::cout << "Ship instance is null";
         std::cout << "\n";
     }
-    return (count == 5 || (shipInstance && shipInstance->GetFuel() <= 0) || (shipInstance && shipInstance->GetHealth() <= 0));
+    return (count == 5 ||shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0);
 }
 
 void Game::chooseship() {
