@@ -82,10 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/AbondonedPlanet.h">
+			<Option target="CppProject"/>
+		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Asteroids.h">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Event.h">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Game.h">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Pirate.h">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/inc/Ship.h">
@@ -103,7 +112,13 @@
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/main.cpp">
 			<Option target="CppProject"/>
 		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/AbondonedPlanet.cpp">
+			<Option target="CppProject"/>
+		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Asteroids.cpp">
+			<Option target="CppProject"/>
+		</Unit>
+		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Game.cpp">
 			<Option target="CppProject"/>
 		</Unit>
 		<Unit filename="C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/src/Pirate.cpp">

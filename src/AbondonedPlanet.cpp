@@ -24,7 +24,7 @@ void AbondonedPlanet::eventEncounter(std::unique_ptr<Ship> ship){
         ship->changeMoney(10);
     }
     else{
-        std::cout <<"Ambush!"<<"\n";
+        std::cout <<"Ambush Pirate Attack!"<<"\n";
         std::unique_ptr<Pirate> attacker(new Pirate(10,50));
         attacker->eventEncounter(std::move(ship));
 

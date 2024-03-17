@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/AbondonedPlanet.obj: src/AbondonedPlanet.cpp.obj
+.PHONY : src/AbondonedPlanet.obj
+
+# target to build an object file
+src/AbondonedPlanet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/AbondonedPlanet.cpp.obj
+.PHONY : src/AbondonedPlanet.cpp.obj
+
+src/AbondonedPlanet.i: src/AbondonedPlanet.cpp.i
+.PHONY : src/AbondonedPlanet.i
+
+# target to preprocess a source file
+src/AbondonedPlanet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/AbondonedPlanet.cpp.i
+.PHONY : src/AbondonedPlanet.cpp.i
+
+src/AbondonedPlanet.s: src/AbondonedPlanet.cpp.s
+.PHONY : src/AbondonedPlanet.s
+
+# target to generate assembly for a file
+src/AbondonedPlanet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/AbondonedPlanet.cpp.s
+.PHONY : src/AbondonedPlanet.cpp.s
+
 src/Asteroids.obj: src/Asteroids.cpp.obj
 .PHONY : src/Asteroids.obj
 
@@ -175,6 +199,30 @@ src/Asteroids.s: src/Asteroids.cpp.s
 src/Asteroids.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Asteroids.cpp.s
 .PHONY : src/Asteroids.cpp.s
+
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProject.dir\build.make CMakeFiles/CppProject.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
 src/Pirate.obj: src/Pirate.cpp.obj
 .PHONY : src/Pirate.obj
@@ -284,9 +332,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/AbondonedPlanet.obj
+	@echo ... src/AbondonedPlanet.i
+	@echo ... src/AbondonedPlanet.s
 	@echo ... src/Asteroids.obj
 	@echo ... src/Asteroids.i
 	@echo ... src/Asteroids.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
 	@echo ... src/Pirate.obj
 	@echo ... src/Pirate.i
 	@echo ... src/Pirate.s

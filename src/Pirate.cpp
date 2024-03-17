@@ -15,7 +15,7 @@ int Pirate::generateRandomNumber() {
 
 int Pirate::chooseaction(){
     int sec;
-    std::cout << "Choose action(0 run 1 fight 2 negotiate)" << "\n";
+    std::cout << " Pirate attack! Choose action(0 run 1 fight 2 negotiate)" << "\n";
     std::cin >> sec;
     return sec;
 }
