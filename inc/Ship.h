@@ -20,7 +20,7 @@ public:
 
     virtual double GetHealth() = 0;
 
-    virtual int GetFuel() const = 0;
+    virtual int GetFuel() = 0;
 
     virtual double GetChance() const = 0;
 

@@ -18,7 +18,7 @@ void normalship::DecreaseFuel() {
 double normalship::GetHealth() {
     return health;
 }
-int normalship::GetFuel() const {
+int normalship::GetFuel() {
     return fuel;
 }
 int normalship::GetMoney()  {

@@ -19,7 +19,7 @@ void fastship::DecreaseFuel() {
 double fastship::GetHealth() {
     return health;
 }
-int fastship::GetFuel() const {
+int fastship::GetFuel()  {
     return fuel;
 }
 int fastship::GetMoney() {

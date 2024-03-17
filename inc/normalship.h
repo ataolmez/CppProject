@@ -19,7 +19,7 @@ public:
     void DecreaseFuel() override;
     void changeMoney(int pay) override;
     double GetHealth() override;
-    int GetFuel() const override;
+    int GetFuel() override;
     double GetChance() const override;
     double GetDamage() const override;
     int GetMoney() override;

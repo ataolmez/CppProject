@@ -17,7 +17,20 @@
 
 
 void Game::begin() {
+    std::cout << "Starting the game...\n";
     Game::chooseship();
+
+
+    // Call chooseship to initialize shipInstance
+    Game::chooseship();
+
+    // Debug statements to verify shipInstance
+    if (normalshipInstance)
+        std::cout << "Normal ship initialized\n";
+    if (strongshipInstance)
+        std::cout << "Strong ship initialized\n";
+    if (fastshipInstance)
+        std::cout << "Fast ship initialized\n";
 
     switch (shipSelection) {
         case 1:
@@ -53,8 +66,23 @@ void Game::begin() {
 }
 
 bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
+    std::cout << "Count: " << count;
 
-    return (count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0);
+    if (shipInstance) {
+        std::cout << ", Fuel: " << shipInstance->GetFuel() << ", Health: " << shipInstance->GetHealth() << "\n";
+    } else {
+        std::cout << ", shipInstance is null\n";
+    }
+
+    if (count == 5 || (shipInstance && shipInstance->GetFuel() <= 0) || (shipInstance && shipInstance->GetHealth() <= 0)) {
+        std::cout << "Ending conditions met. Result: ";
+        if (shipInstance)
+            std::cout << (shipInstance->GetFuel() * 5) + (shipInstance->GetHealth() * 10) + (shipInstance->GetMoney() * 10);
+        else
+            std::cout << "Ship instance is null";
+        std::cout << "\n";
+    }
+    return (count == 5 || (shipInstance && shipInstance->GetFuel() <= 0) || (shipInstance && shipInstance->GetHealth() <= 0));
 }
 
 void Game::chooseship() {
@@ -81,10 +109,15 @@ void Game::chooseship() {
 
 
 void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
+    if (!shipInstance) {
+        std::cout << "shipInstance is null\n";
+        return;
+    }
+
     std::vector<std::unique_ptr<Event>> eventVector;
-    eventVector.push_back(std::make_unique<Pirate>(10,50));
-    eventVector.push_back(std::make_unique<Asteroids>(10,50));
-    eventVector.push_back(std::make_unique<AbondonedPlanet>(0,50));
+    eventVector.push_back(std::make_unique<Pirate>(10, 50));
+    eventVector.push_back(std::make_unique<Asteroids>(10, 50));
+    eventVector.push_back(std::make_unique<AbondonedPlanet>(0, 50));
 
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 
@@ -93,16 +126,9 @@ void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
     Event* randomEvent = eventVector[randomIndex].get();
     randomEvent->eventEncounter(std::move(shipInstance)); // Passing ownership to event
 
-    // After the event, check if the game has ended
-    if (end(normalshipInstance) || end(strongshipInstance) || end(fastshipInstance)) {
-        // If any shipInstance has ended the game, display the result
-        std::cout << "Game Over! Result: ";
-        if (normalshipInstance)
-            std::cout << (normalshipInstance->GetFuel() * 5) + (normalshipInstance->GetHealth() * 10) + (normalshipInstance->GetMoney() * 10);
-        else if (strongshipInstance)
-            std::cout << (strongshipInstance->GetFuel() * 5) + (strongshipInstance->GetHealth() * 10) + (strongshipInstance->GetMoney() * 10);
-        else if (fastshipInstance)
-            std::cout << (fastshipInstance->GetFuel() * 5) + (fastshipInstance->GetHealth() * 10) + (fastshipInstance->GetMoney() * 10);
-        std::cout << std::endl;
-    }
+    // Check if any ship has ended the game
+    bool gameEnded = end(normalshipInstance) || end(strongshipInstance) || end(fastshipInstance);
+
+    // Debug statement to check if end function has been called and the result of gameEnded
+    std::cout << "End() called. gameEnded: " << gameEnded << "\n";
 }

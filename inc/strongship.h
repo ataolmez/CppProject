@@ -14,7 +14,7 @@ public:
     void DecreaseHealth(int damage);
     void DecreaseFuel();
     double GetHealth() override;
-    int GetFuel() const override;
+    int GetFuel() override;
     double GetChance() const override;
     double GetDamage() const override;
     int GetMoney() override;

@@ -18,7 +18,7 @@ void strongship::DecreaseFuel() {
 double strongship::GetHealth() {
     return health;
 }
-int strongship::GetFuel() const {
+int strongship::GetFuel()  {
     return fuel;
 }
 int strongship::GetMoney() {
