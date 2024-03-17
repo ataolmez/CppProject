@@ -91,9 +91,18 @@ void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
     int randomIndex = std::rand() % eventVector.size();
 
     Event* randomEvent = eventVector[randomIndex].get();
-    randomEvent->eventEncounter(shipInstance);
-    if (end(shipInstance)) {
-        std::cout<< (shipInstance->GetFuel()*5) + (shipInstance->GetHealth()*10)+(shipInstance->GetMoney()*10)<<"\n";
+    randomEvent->eventEncounter(std::move(shipInstance)); // Passing ownership to event
 
+    // After the event, check if the game has ended
+    if (end(normalshipInstance) || end(strongshipInstance) || end(fastshipInstance)) {
+        // If any shipInstance has ended the game, display the result
+        std::cout << "Game Over! Result: ";
+        if (normalshipInstance)
+            std::cout << (normalshipInstance->GetFuel() * 5) + (normalshipInstance->GetHealth() * 10) + (normalshipInstance->GetMoney() * 10);
+        else if (strongshipInstance)
+            std::cout << (strongshipInstance->GetFuel() * 5) + (strongshipInstance->GetHealth() * 10) + (strongshipInstance->GetMoney() * 10);
+        else if (fastshipInstance)
+            std::cout << (fastshipInstance->GetFuel() * 5) + (fastshipInstance->GetHealth() * 10) + (fastshipInstance->GetMoney() * 10);
+        std::cout << std::endl;
     }
 }
