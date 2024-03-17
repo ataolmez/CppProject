@@ -118,11 +118,11 @@ void Game::RandomEvent(std::unique_ptr<Ship>&shipInstance) {
 
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 
-    for (auto& event : eventVector) {
+
         int randomIndex = std::rand() % eventVector.size();
         Event* randomEvent = eventVector[randomIndex].get();
         std::cout << "Executing random event...\n";
         randomEvent->eventEncounter(shipInstance);
         std::cout << "Random event executed.\n";
-    }
+
 }

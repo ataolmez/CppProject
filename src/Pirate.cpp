@@ -27,7 +27,7 @@ int Pirate::chooseaction(){
 void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
     int secenek;
 
-    for (int i = 0; i < 3; ++i) {
+
         int randomNumber_ = generateRandomNumber();
         randomNumberVector.push_back(randomNumber);
         secenek = chooseaction();
@@ -73,7 +73,7 @@ void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
                     std::cout << "error" << "\n";
             }
         }
-    }
+
 
 
 }
