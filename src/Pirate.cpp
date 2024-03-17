@@ -7,10 +7,13 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <random>
 
 int Pirate::generateRandomNumber() {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
-    return rand() % 100 + 1;
+    static std::random_device rd;
+    static std::mt19937 rng(rd());
+    std::uniform_int_distribution<int> distribution(1, 100);
+    return distribution(rng);
 }
 
 int Pirate::chooseaction(){

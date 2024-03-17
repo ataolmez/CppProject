@@ -3,6 +3,7 @@
 #include <iostream>
 #include <memory>
 #include "../inc/Asteroids.h"
+#include <random>
 
 //
 // Created by ARDA on 14.03.2024.
@@ -10,9 +11,10 @@
 
 
 int Asteroids::generateRandomNumber() {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
-
-    return rand() % 100 + 1;
+    static std::random_device rd;
+    static std::mt19937 rng(rd());
+    std::uniform_int_distribution<int> distribution(1, 100);
+    return distribution(rng);
 }
 
 void Asteroids::eventEncounter(std::unique_ptr<Ship> ship){
