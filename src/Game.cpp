@@ -53,10 +53,7 @@ void Game::begin() {
 }
 
 bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
-    if(count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0){
-        std::cout<< (shipInstance->GetFuel()*5) + (shipInstance->GetHealth()*10)+(shipInstance->GetMoney()*10)<<"\n";
 
-    }
     return (count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0);
 }
 
@@ -94,6 +91,9 @@ void Game::RandomEvent(std::unique_ptr<Ship>shipInstance) {
     int randomIndex = std::rand() % eventVector.size();
 
     Event* randomEvent = eventVector[randomIndex].get();
-    randomEvent->eventEncounter(std::move(shipInstance));
+    randomEvent->eventEncounter(shipInstance);
+    if (end(shipInstance)) {
+        std::cout<< (shipInstance->GetFuel()*5) + (shipInstance->GetHealth()*10)+(shipInstance->GetMoney()*10)<<"\n";
 
-};
+    }
+}
