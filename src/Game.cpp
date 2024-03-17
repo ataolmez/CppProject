@@ -25,20 +25,14 @@ void Game::begin() {
                 RandomEvent(std::move(normalshipInstance));
                 count++;
                 std::cout<<count<<"\n";
-                if(end(normalshipInstance)){
-                    std::cout<< (normalshipInstance->GetFuel()*5) + (normalshipInstance->GetHealth()*10)+(normalshipInstance->GetMoney()*10)<<"\n";
 
-                };
             }
             break;
         case 2:
             while (!end(strongshipInstance)) {
                 RandomEvent(std::move(strongshipInstance));
                 count++;
-                if(end(strongshipInstance)){
-                    std::cout<< (strongshipInstance->GetFuel()*5) + (strongshipInstance->GetHealth()*10)+(strongshipInstance->GetMoney()*10)<<"\n";
 
-                };
 
             }
             break;
@@ -46,10 +40,7 @@ void Game::begin() {
             while (!end(fastshipInstance)) {
                 RandomEvent(std::move(fastshipInstance));
                 count++;
-                if(end(fastshipInstance)){
-                    std::cout<< (fastshipInstance->GetFuel()*5) + (fastshipInstance->GetHealth()*10)+(fastshipInstance->GetMoney()*10)<<"\n";
 
-                };
 
             }
             break;
@@ -62,6 +53,10 @@ void Game::begin() {
 }
 
 bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
+    if(count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0){
+        std::cout<< (shipInstance->GetFuel()*5) + (shipInstance->GetHealth()*10)+(shipInstance->GetMoney()*10)<<"\n";
+
+    }
     return (count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0);
 }
 
