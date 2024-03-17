@@ -26,6 +26,7 @@ void Asteroids::eventEncounter(std::unique_ptr<Ship> ship){
             ship->DecreaseHealth(Event::damage);
             std::cout << "Uzay Anlik: Asteroid Mahallesinde gazaaaa!!!" << "\n";
             std::cout << "Health is decreased" << "\n";
+            std::cout<< "Current Health:"<< ship->GetHealth() <<"\n";
         }
     }
 }
