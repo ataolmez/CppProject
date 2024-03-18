@@ -31,11 +31,11 @@ void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
         int randomNumber_ = generateRandomNumber();
         randomNumberVector.push_back(randomNumber);
     }
-        secenek = chooseaction();
         while (escapeParameter == 0) {
+            secenek = chooseaction();
             switch (secenek) {
                 case 0:
-                    if (ship->GetFuel() == 1) {
+                    if (ship->GetFuel() <= 1) {
                         std::cout << "You don't have enough fuel!" << "\n";
                     } else if (randomNumberVector[0] < ship->GetChance() * 50) {
                         std::cout << "Ship Escaped From the Pirates" << "\n";
