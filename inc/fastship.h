@@ -4,7 +4,7 @@
 
 #ifndef CPPPROJECT_FASTSHIP_H
 #define CPPPROJECT_FASTSHIP_H
-#include "../inc/Ship.h"
+#include "Ship.h"
 
 class fastship:public Ship{
 public:

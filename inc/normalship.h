@@ -4,7 +4,7 @@
 
 #ifndef CPPPROJECT_NORMALSHIP_H
 #define CPPPROJECT_NORMALSHIP_H
-#include "../inc/ship.h"
+#include "Ship.h"
 
 class normalship:public Ship {
 

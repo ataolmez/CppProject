@@ -4,7 +4,7 @@
 
 #ifndef CPPPROJECT_STRONGSHIP_H
 #define CPPPROJECT_STRONGSHIP_H
-#include "../inc/Ship.h"
+#include "Ship.h"
 
 class strongship :public Ship{
 public:

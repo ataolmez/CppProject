@@ -6,10 +6,10 @@
 #define CPPPROJECT_GAME_H
 #include <iostream>
 #include <memory>
-#include "../inc/ship.h"
-#include "../inc/normalship.h"
-#include "../inc/strongship.h"
-#include "../inc/fastship.h"
+#include "Ship.h"
+#include "normalship.h"
+#include "strongship.h"
+#include "fastship.h"
 
 
 class Game{

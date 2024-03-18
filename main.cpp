@@ -12,7 +12,6 @@
 #include "inc/Pirate.h"
 #include "inc/Game.h"
 
-
 int main(){
     Game voyager;
     voyager.begin();

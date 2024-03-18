@@ -12,7 +12,6 @@
 
 
 int Asteroids::generateRandomNumber() {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
     return rand() % 100 + 1;
 }

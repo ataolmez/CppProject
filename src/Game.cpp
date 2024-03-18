@@ -6,11 +6,11 @@
 #include <vector>
 #include <ctime>
 #include "../inc/Game.h"
-#include "../inc/ship.h"
+#include "../inc/Ship.h"
 #include "../inc/normalship.h"
 #include "../inc/strongship.h"
 #include "../inc/fastship.h"
-#include "../inc/event.h"
+#include "../inc/Event.h"
 #include "../inc/Pirate.h"
 #include "../inc/Asteroids.h"
 #include "../inc/AbondonedPlanet.h"
@@ -19,7 +19,7 @@
 void Game::begin() {
     std::cout << "Starting the game...\n";
     Game::chooseship();
-
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
     // Debug statements to verify shipInstance
     if (normalshipInstance)
@@ -66,7 +66,7 @@ bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
     std::cout << "Count: " << count;
 
     if (shipInstance) {
-        std::cout << ", Fuel: " << shipInstance->GetFuel() << ", Health: " << shipInstance->GetHealth() << "\n";
+        std::cout << ", Fuel: " << shipInstance->GetFuel() << ", Health: " << shipInstance->GetHealth() << " Gold: " << shipInstance->GetMoney() << "\n";
     } else {
         std::cout << ", shipInstance is null\n";
     }

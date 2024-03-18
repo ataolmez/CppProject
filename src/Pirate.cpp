@@ -30,6 +30,7 @@ void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
     for (int i = 0; i < 3; ++i) {
         int randomNumber_ = generateRandomNumber();
         randomNumberVector.push_back(randomNumber);
+    }
         secenek = chooseaction();
         while (escapeParameter == 0) {
             switch (secenek) {
@@ -76,4 +77,3 @@ void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
     }
 
 
-}
