@@ -58,15 +58,15 @@ void Pirate::eventEncounter(std::unique_ptr<Ship>& ship) {
                 case 2:
                     if (randomNumberVector[2] % 3 == 0) {
                         ship->changeMoney(10);
-                        std::cout << "10 tele" << "\n";
+                        std::cout << "-10 tele" << "\n";
                         escapeParameter = 1;
                     } else if (randomNumberVector[2] % 3 == 1) {
                         ship->changeMoney(20);
-                        std::cout << "20 tele" << "\n";
+                        std::cout << "-20 tele" << "\n";
                         escapeParameter = 1;
                     } else if (randomNumberVector[2] % 3 == 2) {
                         ship->changeMoney(30);
-                        std::cout << "30 tele" << "\n";
+                        std::cout << "-30 tele" << "\n";
                         escapeParameter = 1;
                     }
                     break;

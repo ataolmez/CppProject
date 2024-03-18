@@ -18,9 +18,10 @@ int AbondonedPlanet::generateRandomNumber() {
 }
 
 void AbondonedPlanet::eventEncounter(std::unique_ptr<Ship> &ship){
+    std::cout << "!!!New Planet Discovered!!!" << "\n";
     int randomNumber = generateRandomNumber();
     if (randomNumber < ship->GetChance() * Event::escapeChance) {
-        std::cout << "You have found 10 gold!" << "\n";
+        std::cout << " You have found 10 gold!" << "\n";
         ship->changeMoney(10);
     }
     else{
