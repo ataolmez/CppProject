@@ -76,7 +76,7 @@ bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
 
 void Game::chooseship() {
     int number;
-    std::cout << "Choose a ship" << "\n";
+    std::cout << "Choose a ship 1:Normal, 2:Strong, 3: Fast " << "\n";
     std::cin >> number;
     switch (number) {
         case 1:
