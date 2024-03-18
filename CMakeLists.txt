@@ -23,4 +23,3 @@ add_executable(CppProject main.cpp
         src/AbondonedPlanet.cpp
 
 )
-
