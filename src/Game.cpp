@@ -5,6 +5,8 @@
 #include <memory>
 #include <vector>
 #include <ctime>
+#include <thread>
+#include <chrono>
 #include "../inc/Game.h"
 #include "../inc/Ship.h"
 #include "../inc/normalship.h"
@@ -27,23 +29,30 @@ void Game::begin() {
                 RandomEvent(normalshipInstance);
                 count++;
                 std::cout<<count<<"\n";
-
+                std::cout<<"Event ended"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::cout<<"Get ready"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
             }
             break;
         case 2:
             while (!end(strongshipInstance)) {
                 RandomEvent(strongshipInstance);
                 count++;
-
-
+                std::cout<<"Event ended"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::cout<<"Get ready"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
             }
             break;
         case 3:
             while (!end(fastshipInstance)) {
                 RandomEvent(fastshipInstance);
                 count++;
-
-
+                std::cout<<"Event ended"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::cout<<"Get ready"<<"\n";
+                std::this_thread::sleep_for(std::chrono::seconds(2));
             }
             break;
         default:
