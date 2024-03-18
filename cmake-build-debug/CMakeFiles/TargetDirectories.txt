@@ -1,3 +1,3 @@
-C:/Users/ATA/Documents/GitHub/CppProject/cmake-build-debug/CMakeFiles/CppProject.dir
-C:/Users/ATA/Documents/GitHub/CppProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ATA/Documents/GitHub/CppProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/cmake-build-debug/CMakeFiles/CppProject.dir
+C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ARDA/OneDrive/Belgeler/GitHub/CppProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

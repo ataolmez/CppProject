@@ -64,7 +64,7 @@ bool Game::end(std::unique_ptr<Ship>& shipInstance) const {
     }
 
     if (count == 5 || shipInstance->GetFuel() <= 0 || shipInstance->GetHealth() <= 0) {
-        std::cout << "Ending conditions met. Result: ";
+        std::cout << "Ending conditions met. Total Score: ";
         if (shipInstance)
             std::cout << (shipInstance->GetFuel() * 5) + (shipInstance->GetHealth() * 10) + (shipInstance->GetMoney() * 10);
         else
@@ -82,14 +82,17 @@ void Game::chooseship() {
         case 1:
             normalshipInstance = std::make_unique<normalship>(100, 0, 100, 1, 1);
             shipSelection = number;
+            std::cout << "NORMAL_SHIP IS READY TO TRAVEL" << "\n";
             break;
         case 2:
             strongshipInstance = std::make_unique<strongship>(100, 0, 100, 0.5, 0.5);
             shipSelection = number;
+            std::cout << "STRONG_SHIP IS READY TO TRAVEL" << "\n";
             break;
         case 3:
             fastshipInstance = std::make_unique<fastship>(100, 0, 100, 1.5, 1.5);
             shipSelection = number;
+            std::cout << "FAST_SHIP IS READY TO TRAVEL" << "\n";
             break;
         default:
             std::cout << "Invalid selection" << "\n";
